@@ -17,21 +17,34 @@
             </div>
         </div>
 
-        <div class="container-fluid d-flex justify-content-center">
+        <div class="container-fluid d-flex justify-content-center second-part">
             <div class="container d-flex justify-content-between align-items-center">
                 <HeaderLogo/>
-                <p><font-awesome-icon :icon="['fas', 'bars']"/> CATEGORY</p>
+                <a href="#">
+                    <font-awesome-icon :icon="['fas', 'bars']" class="content-icon"/>
+                    <span>CATEGORY</span>
+                </a>
                 <form class="example" action="action_page.php">
                     <input type="text" placeholder="Search courses" name="search">
                     <button type="submit">hh</button>
                 </form>
-                <p><font-awesome-icon :icon="['fas', 'bullhorn']"/> Become an Instructor</p>
-                <p><font-awesome-icon :icon="['fas', 'briefcase']"/> For Enterprise</p>
-                <p>Log in</p>
+                <a href="#">
+                    <font-awesome-icon :icon="['fas', 'bullhorn']" class="content-icon"/>
+                    <span>Become an Instructor</span>
+                </a>
+                <a href="#">
+                    <font-awesome-icon :icon="['fas', 'briefcase']" class="content-icon"/>
+                    <span>For Enterprise</span>
+                </a>
+                <a href="#">
+                    <font-awesome-icon :icon="['fas', 'user']" class="content-icon"/>
+                    <span>Log in</span>
+                </a>
                 <button>SIGN UP</button>
                 <font-awesome-icon :icon="['far', 'bookmark']"/>
             </div>
         </div>
+        
     </div>
 
 </template>
@@ -136,8 +149,11 @@ export default {
     border-bottom: 2px solid $mystic;
 }
 p{
-     margin: 0;
+    margin: 0;
     padding: 0;
+}
+span{
+    padding-top: 14px;
 }
 .options{
     display: flex;
@@ -165,4 +181,12 @@ select{
     color: $submarine;
     background-color: white;
 }
-</style>s
+.content-icon{
+    margin-bottom: 4px;
+    margin-right: 5px;
+}
+.second-part a{
+    color: black;
+    text-decoration: none;
+}
+</style>
