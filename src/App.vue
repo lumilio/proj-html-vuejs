@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-
-      <div class="container-fluid bg-dark">xxx</div>
-
+      <header></header>
+      <main></main>
+      <footer></footer>
   </div>
 </template>
 
@@ -10,11 +10,260 @@
 
 
 export default {
-  name: 'App',
-  components: {
+    name: '',
+    components: {
+        
+    },
+    data() {
+        return {
+            HeaderSection:[
+                {
+                    name:'Home'
+                },
+                {
+                    name:'Pages'
+                },
+                {
+                    name:'Course Formats'
+                },
+                {
+                    name:'Courses'
+                },
+                {
+                    name:'Demos'
+                },
+            ],
+            HeaderSocialIcons:[
+                {
+                    icon_pic:''
+                },
+                {
+                    icon_pic:''
+                },
+                {
+                    icon_pic:''
+                },
+                {
+                    icon_pic:''
+                },
+                {
+                    icon_pic:''
+                },
+            ],
+            BannerCategory:[
+                {
+                    name:'Business',
+                    icon_name:'',
+                },
+                {
+                    name:'Design',
+                    icon_name:'',
+                },
+                {
+                    name:'Lifestyle',
+                    icon_name:'',
+                },
+                {
+                    name:'Office Productivity',
+                    icon_name:'',
+                },
+            ],
+            CardsCategory:[
+                {
+                    name:'All Categories'
+                },
+                {
+                    name:'Business'
+                },
+                {
+                    name:'Design'
+                },
+                {
+                    name:'IT & Software'
+                },
+                {
+                    name:'Lifestyle'
+                },
+                {
+                    name:'Marketing'
+                },
+                {
+                    name:'Office Productivity'
+                },
+            ],
+            Cards:[
+                {
+                    image:'1',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'2',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'3',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'4',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'5',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'6',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'7',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'8',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'9',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'10',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                }, 
+                {
+                    image:'11',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'12',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'13',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'14',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'15',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },
+                {
+                    image:'16',
+                    category:'',
+                    course_name:'',
+                    vote:'',
+                    old_price:'',
+                    new_price:'',
+                },   
+            ],
+            ExtraCards:[
+                {
+                    title:'',
+                    text_info:'',
+                    text_button:'',
+                    image:'',
+                },
+                {
+                    title:'',
+                    text_info:'',
+                    text_button:'',
+                    image:'',
+                },
+            ],
+            FooterSocialIcons:[
+                {
+                    image:'',
+                    color:'',
+                },
+                {
+                    image:'',
+                    color:'',
+                },
+                {
+                    image:'',
+                    color:'',
+                },
+                {
+                    image:'',
+                    color:'',
+                },
+                {
+                    image:'',
+                    color:'',
+                },
+            ],
 
-  }
-}
+        };
+    },
+    methods:{},
+    created(){},
+    mounted(){}
+} 
 </script>
 
 <style lang="scss">
