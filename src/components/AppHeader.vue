@@ -1,24 +1,35 @@
 <template>
 
     <div>
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="container d-flex justify-content-between align-items-center">
+        <div class="container-fluid d-flex justify-content-center first-part">
+            <div class="container d-flex justify-content-between align-items-center py-3">
                 <select>
                     <option v-for='item in LenguageOption' :key='item.id' value="item.value">{{item.value}}</option>
                 </select>
                 <div class="options">
-                    <ul class="section">
+                    <ul class="menu">
                         <li v-for="item in HeaderSection" :key='item.id'> <a href="#">{{item.name}}</a></li>
                     </ul>
-                    <ul class="social">
+                    <ul class="">
                         <li v-for="item in HeaderSocialIcons" :key='item.id'> <a href="#"><font-awesome-icon :icon="[item.icon_prefix, item.icon_code]"/></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        
+
         <div class="container-fluid d-flex justify-content-center">
-            <div class="container d-flex justify-content-center align-items-center">
+            <div class="container d-flex justify-content-between align-items-center">
+                <HeaderLogo/>
+                <p><font-awesome-icon :icon="['fas', 'bars']"/> CATEGORY</p>
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Search courses" name="search">
+                    <button type="submit">hh</button>
+                </form>
+                <p><font-awesome-icon :icon="['fas', 'bullhorn']"/> Become an Instructor</p>
+                <p><font-awesome-icon :icon="['fas', 'briefcase']"/> For Enterprise</p>
+                <p>Log in</p>
+                <button>SIGN UP</button>
+                <font-awesome-icon :icon="['far', 'bookmark']"/>
             </div>
         </div>
     </div>
@@ -31,7 +42,11 @@
 //---------------components-------------------
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-library.add(fab)
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, fas, far)
+
+import HeaderLogo from './HeaderLogo.vue';
 //--------------------------------------------
 
 
@@ -40,7 +55,7 @@ library.add(fab)
 export default {
     name: '',
     components: {
-
+        HeaderLogo,
     },
     data() {
         return {
@@ -117,5 +132,37 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/variables.scss';
-
+.first-part{
+    border-bottom: 2px solid $mystic;
+}
+p{
+     margin: 0;
+    padding: 0;
+}
+.options{
+    display: flex;
+    align-items: center;
+}
+.options ul {
+    margin: 0;
+    padding: 0;
+}
+.options ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.options ul li a{
+    color: $submarine;
+    text-decoration: none;
+}
+.options .menu{
+    font-size: small;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+select{
+    border: none;
+    color: $submarine;
+    background-color: white;
+}
 </style>s
