@@ -271,5 +271,5 @@ export default {
 
 <style lang="scss">
 @import './assets/variables.scss';
-@import "~bootstrap/scss/bootstrap";
+
 </style>
