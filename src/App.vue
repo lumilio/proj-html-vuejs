@@ -1,18 +1,22 @@
 <template>
   <div id="app">
-      <header></header>
-      <main></main>
-      <footer></footer>
+      <AppHeader/>
+      <AppMain/>
+      <AppFooter/>
   </div>
 </template>
 
 <script>
-
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
     name: '',
     components: {
-        
+        AppHeader,
+        AppMain,
+        AppFooter,
     },
     data() {
         return {
@@ -257,7 +261,6 @@ export default {
                     color:'',
                 },
             ],
-
         };
     },
     methods:{},
@@ -269,6 +272,4 @@ export default {
 <style lang="scss">
 @import './assets/variables.scss';
 @import "~bootstrap/scss/bootstrap";
-
-
 </style>
