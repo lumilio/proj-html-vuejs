@@ -1,7 +1,6 @@
 <template>
-
     <div>
-        <div class="container-fluid d-flex justify-content-center first-part">
+        <div class="container-fluid d-flex justify-content-center first-part"> <!-------------------- first part ------------------>
             <div class="container d-flex justify-content-between align-items-center py-3 px-0">
                 <select>
                     <option v-for='item in LenguageOption' :key='item.id' value="item.value">{{item.value}}</option>
@@ -16,8 +15,7 @@
                 </div>
             </div>
         </div>
-
-        <div class="container-fluid d-flex justify-content-center second-part">
+        <div class="container-fluid d-flex justify-content-center second-part"> <!---------------------- second part ----------------------->
             <div class="container d-flex align-items-center py-3 px-0">
                 <HeaderLogo/>
                 <a href="#" id="link-category">
@@ -45,26 +43,22 @@
                 <font-awesome-icon :icon="['fas', 'bookmark']" v-else @click='bookmark = false' id="btn-bookmark-full"/>
             </div>
         </div>
-        
     </div>
-
 </template>
 
 /* -------------------------------------------------------------------------- */
 
 <script>
-//---------------components-------------------
+//---------------utilities-------------------
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, fas, far)
-
+//--------------------------------------------
+//---------------components-------------------
 import HeaderLogo from './HeaderLogo.vue';
 //--------------------------------------------
-
-
-
 
 export default {
     name: '',
@@ -137,9 +131,6 @@ export default {
             ],
         };
     },
-    methods:{},
-    created(){},
-    mounted(){}
 } 
 </script>
 
@@ -252,7 +243,6 @@ form button{
 #btn-bookmark:hover,
 #btn-bookmark-full{
     color: $amaranth;
-    cursor: pointer;
 }
 #btn-bookmark:hover,
 #btn-bookmark-full:hover{

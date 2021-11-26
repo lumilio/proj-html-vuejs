@@ -6,11 +6,14 @@
   </div>
 </template>
 
+/* -------------------------------------------------------------------------- */
+
 <script>
+//---------------components-------------------
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-
+//--------------------------------------------
 export default {
     name: '',
     components: {
@@ -20,40 +23,6 @@ export default {
     },
     data() {
         return {
-            HeaderSection:[
-                {
-                    name:'Home'
-                },
-                {
-                    name:'Pages'
-                },
-                {
-                    name:'Course Formats'
-                },
-                {
-                    name:'Courses'
-                },
-                {
-                    name:'Demos'
-                },
-            ],
-            HeaderSocialIcons:[
-                {
-                    icon_pic:''
-                },
-                {
-                    icon_pic:''
-                },
-                {
-                    icon_pic:''
-                },
-                {
-                    icon_pic:''
-                },
-                {
-                    icon_pic:''
-                },
-            ],
             BannerCategory:[
                 {
                     name:'Business',
@@ -268,6 +237,8 @@ export default {
     mounted(){}
 } 
 </script>
+
+/* -------------------------------------------------------------------------- */
 
 <style lang="scss">
 @import './assets/variables.scss';
