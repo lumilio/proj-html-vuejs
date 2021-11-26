@@ -23,6 +23,9 @@ export default {
 <style scoped lang="scss">
 @import '../assets/variables.scss';
 img{
-    width: 250px;
+    width: 210px;
+}
+img:hover{
+    cursor: pointer;
 }
 </style>
