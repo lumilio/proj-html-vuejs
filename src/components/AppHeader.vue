@@ -156,7 +156,7 @@ span{
 .options ul {
     margin: 0;
     padding: 0;
-    margin-right: -14px;
+    margin-right: -9px;
 }
 .options ul li {
     display: inline-block;
@@ -186,6 +186,13 @@ select:hover{
 .content-icon{
     @include icon-place-1;
 }
+
+.options .social-icons li{
+    margin: 0 6px;
+}
+.social-icons li{
+    margin: 0 5px;
+}
 .social-icons li:hover{
     cursor: pointer;
 }
@@ -207,33 +214,37 @@ select:hover{
 form input{
     background-color: $mystic;
     border: none;
-    padding: 7px 20px;
+    padding: 8px 15px;
     width: 330px;
 }
 form button{
     background-color: $boston-blue;
     color: white;
     border: none;
-    padding: 7px 15px;
+    padding: 8px 15px;
 }
-#link-category, 
+#link-category{
+    margin-left: 40px;
+    margin-right: 15px;
+}
 #link-instructor{
     margin-left: 55px;
     margin-right: 15px;
 }
 #link-enterprise{
-    margin-right: 54px;
+    margin-right: 55px;
     margin-left: 10px; 
 }
 #link-login{
     margin-right: 15px;
 }
 #btn-signup{
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 15px 25px;
+    border-radius: 25px;
     border: none;
     background-color: $amaranth;
     color: white;
+    font-weight: bolder;
 }
 #btn-signup:hover{
     background-color: $apple;
@@ -249,7 +260,7 @@ form button{
 }
 #btn-bookmark,
 #btn-bookmark-full{
-    transform: scale(1,1.5);
+    transform: scale(1.3,1.5);
     margin-left: 20px;
 }
 </style>

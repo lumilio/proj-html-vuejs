@@ -1,8 +1,8 @@
 <template>
-        <div class="container-fluid d-flex justify-content-end first-part"> 
+        <div class="container-fluid d-flex justify-content-end first-part px-0"> 
             <div class="container d-flex justify-content-center align-items-center px-0">
                 <div class="text">
-                    <h1>Udemy Affiliate Sales</h1>
+                    <h1> Udemy Affiliate Sales</h1>
                     <p>Monetize your audience and attract new customers with Udemy!</p>
                 </div>
             </div>
@@ -40,13 +40,18 @@ export default {
     margin-top: 20px;
 }
 .text{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 h1, p{
-    margin-left:230px;
+    margin-left:200px;
+}
+h1{
+    font-weight: bolder;
+    @include font-setup-title;
 }
 p{
-    width: 450px;
+    width: 420px;
+    @include font-setup-1;
 }
 .heropic{
     height: 330px;
