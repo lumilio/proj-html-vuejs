@@ -1,14 +1,17 @@
 <template>
-        <div class="container-fluid d-flex justify-content-end first-part px-0"> 
-            <div class="container d-flex justify-content-center align-items-center px-0">
+        <div class="container-fluid d-flex justify-content-center first-part px-0"> 
+
+            <div class="d-flex justify-content-end align-items-center box-1 px-0">
                 <div class="text">
                     <h1> Udemy Affiliate Sales</h1>
                     <p>Monetize your audience and attract new customers with Udemy!</p>
                 </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center px-0">
+
+            <div class="d-flex justify-content-center align-items-center box-2 px-0">
                 <img src="../assets/images/slide-1 (1).png" alt="" class="heropic">
             </div>
+
         </div>
 </template>
 
@@ -41,9 +44,7 @@ export default {
 }
 .text{
     margin-bottom: 30px;
-}
-h1, p{
-    margin-left:200px;
+
 }
 h1{
     font-weight: bolder;
@@ -55,5 +56,24 @@ p{
 }
 .heropic{
     height: 330px;
+}
+
+
+
+
+
+.box-1{
+    width: 40%;
+}
+
+.box-2{
+    width: 60%;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 </style>
