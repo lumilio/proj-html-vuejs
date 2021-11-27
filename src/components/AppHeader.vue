@@ -184,8 +184,7 @@ select:hover{
     cursor: pointer;
 }
 .content-icon{
-    margin-bottom: 4px;
-    margin-right: 5px;
+    @include icon-place-1;
 }
 .social-icons li:hover{
     cursor: pointer;
