@@ -57,11 +57,6 @@ p{
 .heropic{
     height: 330px;
 }
-
-
-
-
-
 .box-1{
     width: 40%;
 }
@@ -69,7 +64,6 @@ p{
 .box-2{
     width: 60%;
 }
-
 img{
     object-fit: cover;
     width: 100%;
