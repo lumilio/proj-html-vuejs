@@ -1,5 +1,5 @@
 <template>
-<img src="../assets/images/logo-colored.png" alt="">
+<img src="../assets/images/MasterStudy.svg" alt="">
 </template>
 
 /* -------------------------------------------------------------------------- */
