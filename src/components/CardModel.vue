@@ -6,7 +6,12 @@
             <p class="my-2 titolo">{{titolo}}</p>
             <hr>
             <div class="d-flex justify-content-between align-items-center">
-                <p>{{voto}}</p>
+                <div class="stars-outer">
+                    <font-awesome-icon v-for='item in 5' :key='item.id' :icon="['far', 'star']" class='icon'/>
+                    <div class="stars-inner" :style="{ width: (Math.round((((voto / 5) * 100) / 10) * 10)) + '%' }">
+                        <font-awesome-icon v-for='item in 5' :key='item.id' :icon="['fas', 'star']" class='icon'/>
+                    </div>
+                </div>
                 <div class="d-flex flex-column align-items-end">
                     <p class="oldprice my-0">{{prezzo1}}</p>
                     <p class="newprice">{{prezzo2}}</p>
@@ -21,6 +26,10 @@
 
 <script>
 //---------------utilities-------------------
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fas, far)
 //--------------------------------------------
 //---------------components-------------------
 //--------------------------------------------
@@ -75,4 +84,29 @@ hr{
 .newprice{
     font-size: large;
 }
+
+
+
+
+
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.icon{
+    color: #efb467;
+}
+
+
 </style>
