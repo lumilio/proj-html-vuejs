@@ -1,6 +1,10 @@
 <template>
-        <div class="container-fluid px-0"> 
-
+        <div class="container-fluid px-0 d-flex justify-content-center"> 
+            <ExtraCardModel v-for="item in ExtraCards" :key='item.id'
+            :immagine='item.image'
+            :titolo='item.title'
+            :info='item.text_info'
+            :testobtn='item.text_button'/>
         </div>
 </template>
 
@@ -11,11 +15,14 @@
 //---------------utilities-------------------
 //--------------------------------------------
 //---------------components-------------------
+import ExtraCardModel from './ExtraCardModel.vue';
 //--------------------------------------------
 
 export default {
     name: '',
-    components: {},
+    components: {
+        ExtraCardModel,
+    },
     data() {
         return {
             ExtraCards:[
@@ -29,7 +36,7 @@ export default {
                     title:'Access For Business',
                     text_info:'Get unlimited access to 2,500 of top courses for your team.',
                     text_button:'DOING BUSINESS',
-                    image:'image_box_2-221x231',
+                    image:'image_box_2-234x231',
                 },
             ],
         };

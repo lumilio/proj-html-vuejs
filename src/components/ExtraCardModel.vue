@@ -1,11 +1,11 @@
 <template>
 
-    <div>
-        <img src="" alt="">
+    <div class="d-flex">
+        <img :src="require(`../assets/images/${immagine}.png`)" alt="x">
         <div>
-            <h1></h1>
-            <p></p>
-            <button></button> 
+            <h1>{{titolo}}</h1>
+            <p>{{titolo}}</p>
+            <button>{{titolo}}</button> 
         </div>
     </div>
 
