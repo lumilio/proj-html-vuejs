@@ -63,6 +63,9 @@ img{
     width: 207px;
     height: 310px;
 }
+.cardmodel:hover{
+    cursor: pointer;
+}
 .cardtext{
     padding: 12px;
     font-size: small;

@@ -23,24 +23,6 @@ export default {
     },
     data() {
         return {
-            BannerCategory:[
-                {
-                    name:'Business',
-                    icon_name:'',
-                },
-                {
-                    name:'Design',
-                    icon_name:'',
-                },
-                {
-                    name:'Lifestyle',
-                    icon_name:'',
-                },
-                {
-                    name:'Office Productivity',
-                    icon_name:'',
-                },
-            ],
             CardsCategory:[
                 {
                     name:'All Categories'

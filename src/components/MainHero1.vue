@@ -57,7 +57,7 @@ p{
 }
 .box-1{
     z-index: 1;
-    left: calc(50% - 500px);
+    left: calc(50% - 530px);
     top: 95px;
     position: absolute;
 }
