@@ -1,11 +1,13 @@
 <template>
-        <div class="container-fluid px-0 d-flex justify-content-center"> 
+    <div class="container-fluid d-flex justify-content-center"> 
+        <div class="container d-flex justify-content-center around">
             <ExtraCardModel v-for="item in ExtraCards" :key='item.id'
             :immagine='item.image'
             :titolo='item.title'
             :info='item.text_info'
             :testobtn='item.text_button'/>
         </div>
+    </div>
 </template>
 
 /* -------------------------------------------------------------------------- */
@@ -45,10 +47,12 @@ export default {
 </script>
 
 
-
-
 /* -------------------------------------------------------------------------- */
 
 <style scoped lang="scss">
 @import '../assets/variables.scss';
+.container-fluid{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
 </style>

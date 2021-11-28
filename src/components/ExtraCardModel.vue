@@ -1,14 +1,12 @@
 <template>
-
-    <div class="d-flex">
+    <div class="extra-card d-flex align-items-center mx-3 py-4">
         <img :src="require(`../assets/images/${immagine}.png`)" alt="x">
         <div>
-            <h1>{{titolo}}</h1>
-            <p>{{titolo}}</p>
-            <button>{{titolo}}</button> 
+            <h3>{{titolo}}</h3>
+            <p>{{info}}</p>
+            <button>{{testobtn}}</button> 
         </div>
     </div>
-
 </template>
 
 /* -------------------------------------------------------------------------- */
@@ -39,4 +37,32 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/variables.scss';
+.extra-card{
+    border: 1px solid rgb(208, 207, 207);
+    width: 800px;
+}
+button{
+    padding: 15px 25px;
+    border-radius: 25px;
+    margin-top: 10px;
+    border: none;
+    background-color: $amaranth;
+    color: white;
+    font-weight: bolder;
+    font-size: small;
+}
+button:hover{
+    background-color: $apple;
+    color: white;
+}
+img{
+    width: 170px;
+    height: 181px;
+    margin: 30px;
+}
+p{
+    margin-top: 20px;
+    color:rgb(158, 157, 157);
+    max-width: 340px;
+}
 </style>
