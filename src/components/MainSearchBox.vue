@@ -46,7 +46,7 @@ p{
     max-width: 570px;
 }
 h5{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 form input{
     background-color: white;
