@@ -245,6 +245,7 @@ form button{
     background-color: $amaranth;
     color: white;
     font-weight: bolder;
+    font-size: small;
 }
 #btn-signup:hover{
     background-color: $apple;
