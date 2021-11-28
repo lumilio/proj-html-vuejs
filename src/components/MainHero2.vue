@@ -1,8 +1,5 @@
 <template>
         <div class="container-fluid d-flex justify-content-center first-part px-0"> 
-            
-
-
             <div class="box-center d-flex align-items-center justify-content-start">
                 <div>
                     <h1>Limitless learning, more possibilities</h1>
@@ -10,9 +7,6 @@
                     <button>READ MORE</button>
                 </div>
             </div>
-
-
-
         </div>
 </template>
 

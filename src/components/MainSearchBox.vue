@@ -1,18 +1,18 @@
 <template>
-        <div class="container-fluid d-flex justify-content-center first-part px-0"> 
-            
-
-
-            <div class="box-center d-flex align-items-center justify-content-start">
-                <div>
-                    <h1>Limitless learning, more possibilities</h1>
-                    <p>Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.</p>
-                    <button>READ MORE</button>
+        <div class="container-fluid d-flex justify-content-center first-part px-0 py-4"> 
+            <div class="container d-flex justify-content-around ">
+                <div class="mx-4 py-2">
+                    <h5>Limitless learning, more possibilities</h5>
+                    <p>There are many variations of passages of Lorem Ipsum avalible, but the majority have suffered alteration in some form, by injecting humor, or randomaised words.</p>
+                </div>
+                <div class="mx-4 py-2">
+                    <h5>Limitless learning, more possibilities</h5>
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="Search courses" name="search">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
                 </div>
             </div>
-
-
-
         </div>
 </template>
 
@@ -37,4 +37,27 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/variables.scss';
+.container-fluid{
+    background-color: $amaranth;
+    color: white;
+    font-size: small;
+}
+p{
+    max-width: 570px;
+}
+h5{
+    margin-bottom: 20px;
+}
+form input{
+    background-color: white;
+    border: none;
+    padding: 8px 15px;
+    width: 300px;
+}
+form button{
+    background-color: $boston-blue;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+}
 </style>

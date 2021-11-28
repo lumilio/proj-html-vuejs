@@ -60,6 +60,7 @@ img{
 }
 .cardmodel{
     border: 1px solid $mystic;
+    background-color: white;
     width: 207px;
     height: 310px;
 }
