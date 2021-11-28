@@ -62,13 +62,13 @@ p{
     position: absolute;
 }
 .box-2{
-    width: 50%;
+    width: calc(50% + 100px);
     float: right;
 }
 img{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    object-position: left;
+    object-position: left top;
 }
 </style>

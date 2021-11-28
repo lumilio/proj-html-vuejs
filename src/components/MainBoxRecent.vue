@@ -3,8 +3,8 @@
             
             <h1>Recent courses</h1>
 
-            <ul>
-                <li></li>
+            <ul class='my-3 py-2'>
+                <li v-for="item in CardsCategory" :key='item.id' @click="SelectCategory(item,CardsCategory)" :class ="(item.selected == true )?'selected':''" class='mx-2'>{{item.name}}</li>
             </ul>
 
             <div class="container d-flex flex-wrap justify-content-between">
@@ -39,24 +39,31 @@ export default {
         return {
             CardsCategory:[
                 {
+                    selected: true,
                     name:'All Categories'
                 },
                 {
+                    selected: false,
                     name:'Business'
                 },
                 {
+                    selected: false,
                     name:'Design'
                 },
                 {
+                    selected: false,
                     name:'IT & Software'
                 },
                 {
+                    selected: false,
                     name:'Lifestyle'
                 },
                 {
+                    selected: false,
                     name:'Marketing'
                 },
                 {
+                    selected: false,
                     name:'Office Productivity'
                 },
             ],
@@ -160,6 +167,20 @@ export default {
             ],
         };
     },
+    methods:{
+        SelectCategory(x,y){
+            if (x.selected == false) {
+                x.selected = true;
+                for (let i = 0; i < y.length; i++) {
+                    const element = y[i];
+                    if(element != x){
+                        element.selected = false;
+                    }
+                    console.log(element.selected);
+                }
+            }
+        }
+    }
 }
 </script>
 
@@ -169,6 +190,9 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/variables.scss';
+.container-fluid{
+    margin-top: 100px;
+}
 button{
     padding: 15px 25px;
     border-radius: 25px;
@@ -177,9 +201,25 @@ button{
     background-color: $amaranth;
     color: white;
     font-weight: bolder;
+    font-size: small;
+    margin-bottom: 80px;
+    margin-top: 25px;
 }
 button:hover{
     background-color: $apple;
     color: white;
+}
+li{
+    display: inline-block;
+    color: grey ;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+li:hover{
+    cursor: pointer;
+}
+
+.selected{
+    background-color: $mystic;
 }
 </style>

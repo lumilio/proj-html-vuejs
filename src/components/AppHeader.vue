@@ -208,7 +208,6 @@ select:hover{
     text-decoration: none;
 }
 .second-part a:hover{
-    color: $san-juan;
     text-decoration: underline;
 }
 form input{
