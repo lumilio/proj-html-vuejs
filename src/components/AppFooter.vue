@@ -18,8 +18,8 @@
                 </div>
                 <div class="content">
                     <h6>SOCIAL NETWORK</h6>
-                    <div class="d-flex">
-                        <div v-for="item in FooterSocialIcons" :key="item.id"><a href="#"><font-awesome-icon :icon="[item.icon_prefix, item.icon_code]"/></a></div>
+                    <div class="d-flex icon-box">
+                        <div class="icon-container" :style="{'background-color': item.color}" v-for="item in FooterSocialIcons" :key="item.id"><a href="#"><font-awesome-icon :icon="[item.icon_prefix, item.icon_code]"/></a></div>
                     </div>
                 </div>
                 <img src="../assets/images/Top-udemy-courses-90-percent-off.jpg" id="pic-sale" alt="">
@@ -50,7 +50,7 @@ export default {
         return {
             FooterSocialIcons:[
                 {
-                    icon_code:'facebbok',
+                    icon_code:'facebook',
                     icon_prefix:'fab',
                     color:'#3b5998',
                 },
@@ -65,7 +65,7 @@ export default {
                     color:'#0077b5',
                 },
                 {
-                    icon_code:'pintarest',
+                    icon_code:'pinterest',
                     icon_prefix:'fab',
                     color:'#bd081c',
                 },
@@ -77,7 +77,7 @@ export default {
                 {
                     icon_code:'snapchat-ghost',
                     icon_prefix:'fab',
-                    color:'',
+                    color:'#FFFC00',
                 },
                 {
                     icon_code:'google-plus',
@@ -137,5 +137,18 @@ h6{
 }
 #mail{
     color: grey;
+}
+.icon-box{
+    max-width: 230px;
+    flex-wrap: wrap;
+}
+.icon-container{
+    padding: 7px 11px ;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.icon-container a{
+    color: white;
 }
 </style>
