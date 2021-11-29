@@ -54,19 +54,19 @@ span{
     color: grey;
 }
 .box-layout{
-    width: 800px;
+    width: 900px;
 }
 .box-center{
     font-size: small;
     background-color: white;
-    width: 510px;
+    width: 610px;
     padding: 60px 60px;
     position: relative;
 }
 img{
     position: absolute;
     right: -20px;
-    top: 185px;
+    top: 165px;
     width: 20px;
 }
 </style>

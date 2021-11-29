@@ -40,7 +40,7 @@ export default {
     margin-top: 50px;
 }
 .box-center{
-    width: 800px;
+    width: 900px;
     font-size: small;
 }
 h1,p{
