@@ -38,8 +38,11 @@ export default {
 <style scoped lang="scss">
 @import '../assets/variables.scss';
 .extra-card{
-    border: 1px solid rgb(208, 207, 207);
+    border: 1px solid #eeeeee;
     width: 800px;
+}
+h3{
+    @include font-setup-title;
 }
 button{
     padding: 15px 25px;

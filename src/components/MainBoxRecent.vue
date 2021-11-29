@@ -193,6 +193,9 @@ export default {
 .container-fluid{
     margin-top: 100px;
 }
+h1{
+    @include font-setup-title;
+}
 button{
     padding: 15px 25px;
     border-radius: 25px;

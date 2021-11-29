@@ -15,6 +15,7 @@
                 </div>
             </div>
         </div>
+        <vue-position-sticky>
         <div class="container-fluid d-flex justify-content-center second-part"> <!---------------------- second part ----------------------->
             <div class="container d-flex align-items-center py-3 px-0">
                 <HeaderLogo/>
@@ -43,6 +44,7 @@
                 <font-awesome-icon :icon="['fas', 'bookmark']" v-else @click='bookmark = false' id="btn-bookmark-full"/>
             </div>
         </div>
+        </vue-position-sticky>
     </div>
 </template>
 
@@ -202,6 +204,7 @@ select:hover{
 /* ---------------------- second part --------------------- */
 .second-part {
     font-size: small;
+    background-color: white;
 }
 .second-part a{
     color: $san-juan;

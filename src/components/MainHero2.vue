@@ -46,6 +46,9 @@ export default {
 h1,p{
     max-width: 410px;
 }
+h1{
+    @include font-setup-title;
+}
 p{
     margin: 20px 0;
 }

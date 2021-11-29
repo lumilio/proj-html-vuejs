@@ -47,6 +47,7 @@ p{
 }
 h5{
     margin-bottom: 15px;
+    @include font-setup-title;
 }
 form input{
     background-color: white;

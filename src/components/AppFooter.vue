@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container-fluid d-flex justify-content-center first-part px-0 py-5 first-part">
+        <div class="container-fluid d-flex justify-content-center first-part first-part">
             <div class="box-layout d-flex justify-content-between">
                 <div class="content">
                     <h6>ABOUT</h6>
@@ -13,7 +13,7 @@
                     <p class="m-0">Tel.: +1 212 458 300 32</p>
                     <p>Fax: +1 212 375 24 14</p>
 
-                    <p id="mail">info@masterstudy.com</p>
+                    <p> <a id="mail" href="#">info@masterstudy.com</a> </p>
                     <span></span>
                 </div>
                 <div class="content">
@@ -117,11 +117,16 @@ export default {
     width: 200px;
 }
 h6{
-    margin-bottom:20px
+    margin-bottom:17px;
+    font-size: 15px;
+}
+.first-part{
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 .second-part{
     padding: 20px 0;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid grey;
 }
 .second-part p{
     margin-bottom: 0;
@@ -131,13 +136,21 @@ h6{
 .second-part a{
     color: white;
 }
+
+
 #logo{
     width: 20px;
     height: 23px;
 }
 #mail{
     color: grey;
+    text-decoration: none;
 }
+#mail:hover{
+    text-decoration: underline;
+}
+
+
 .icon-box{
     max-width: 230px;
     flex-wrap: wrap;
@@ -147,6 +160,9 @@ h6{
     border-radius: 50%;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+.icon-container:hover{
+    cursor: pointer;
 }
 .icon-container a{
     color: white;

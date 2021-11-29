@@ -96,6 +96,9 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/variables.scss';
+h5{
+    @include font-setup-title;
+}
 .container-fluid{
     margin-top: 70px;
 }

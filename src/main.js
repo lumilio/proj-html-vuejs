@@ -7,6 +7,8 @@ import 'bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 //----------------------------------
+import vuePositionSticky from 'vue-position-sticky'
+Vue.use(vuePositionSticky)
 
 
 Vue.config.productionTip = false

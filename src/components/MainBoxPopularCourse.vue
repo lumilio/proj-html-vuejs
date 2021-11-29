@@ -1,7 +1,7 @@
 <template>
         <div class="container-fluid d-flex flex-column align-items-center justify-content-center first-part px-0"> 
             
-            <h1>Recent courses</h1>
+            <h1>Popular courses</h1>
 
             <p>Discover our most popular courses for self learning</p>
 
@@ -102,6 +102,9 @@ export default {
 .container-fluid{
     padding-top: 80px;
     background-color: $mystic;
+}
+h1{
+    @include font-setup-title;
 }
 p{
     color: grey;

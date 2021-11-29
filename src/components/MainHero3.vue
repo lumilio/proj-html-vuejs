@@ -46,8 +46,11 @@ p{
     margin: 20px 0;
     line-height: 25px;
 }
+h2{
+    @include font-setup-title;
+}
 h6{
-    margin:0
+    margin:0;
 }
 span{
     font-size: small;
