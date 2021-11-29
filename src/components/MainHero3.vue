@@ -4,6 +4,9 @@
                 <div class="box-center">
                     <h2>Investing for Your Future</h2>
                     <p>It is no exagegeration to say this MasterStudy experience was transformative both professionally and personally. this workshop will long remain a high point of my life. Thanks again.... I am feeling energized and eager to start teaching my class next week. I cant't wait to use all of my new teaching tools. I will absolutely recommend this workshop to other educators!</p>
+                    <h6>Linda Green</h6>
+                    <span>Product Manager, Apple Inc</span>
+                    <img src="../assets/images/triangolusreal.png" alt="">
                 </div>
             </div>
         </div>
@@ -38,13 +41,32 @@ export default {
     background-size: cover;
     margin-top: 50px;
 }
+p{
+    color: grey;
+    margin: 20px 0;
+    line-height: 25px;
+}
+h6{
+    margin:0
+}
+span{
+    font-size: small;
+    color: grey;
+}
 .box-layout{
     width: 800px;
 }
 .box-center{
     font-size: small;
     background-color: white;
-    width: 500px;
+    width: 510px;
+    padding: 60px 60px;
+    position: relative;
 }
-
+img{
+    position: absolute;
+    right: -20px;
+    top: 185px;
+    width: 20px;
+}
 </style>
